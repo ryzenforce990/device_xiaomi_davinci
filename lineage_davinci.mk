@@ -15,6 +15,15 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# HorizonDroid Flags
+HORIZON_BUILD_TYPE := OFFICIAL
+HORIZON_MAINTAINER := superxorn
+WITH_GMS := false
+# WITH_GMS_VARIANT := pico
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_MATLOG := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
